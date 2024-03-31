@@ -467,16 +467,6 @@
         }
       
       
-        @media screen and (max-width: 600px) {
-    #pedidos {
-        width: 90%; /* ajuste para telas menores */
-        /* outros estilos específicos para telas menores */
-    }
-    
-}
-
-        
-
         .removerPedido {
             cursor: pointer;
             color: #ff5555;
@@ -1743,29 +1733,9 @@
         }
         
         
-        #mensagemMobile {
-            display: none;
-            text-align: center;
-            padding: 10px;
-            background-color: #ff0000;
-            color: #ffffff;
-            font-size: 30px;
-            font-weight: bold;
-            z-index: 8;
-            top: 90%;
-            left: 10%;
+        
 
-            
-        }
-
-        @media only screen and (max-width: 900px) {
-            #mensagemMobile {
-                display: BLOCK;
-            }
-            
-
-            
-        }  
+        
         
         /* ---------------------------------------------------------------------------------------
         -------------------------------------------------------------------------------------------
@@ -12267,7 +12237,49 @@ width: 7.8%;
 transform: rotate(16deg);  
 }
 
+@media screen and (max-width: 600px) {
+    #pedidos {
+        width: 90%; /* ajuste para telas menores */
+        /* outros estilos específicos para telas menores */
+    }    
+}
+@media only screen and (max-width: 900px) {
+            
+    #bombvbu4{
+        left:-60px;
+        min-width: 100px;
+        max-width: 100px;
+        font-size: 90%;
+        padding: 10px;      
+    
+    }   
+    #bombvbu6{
+        left:-60px;
+        min-width: 100px;
+        max-width: 100px;
+        font-size: 90%;
+        padding: 10px;
 
+    } 
+    #centrifugs{
+        left:-60px;
+        max-width: 100px;
+        min-width: 100px;
+        font-size: 80%;
+        padding: 10px;
+    }   
+    #pedidos{
+        top: 380px;
+    }   
+    #containerInicio{
+        top: -100px;
+        left: -200px;
+        position: absolute;
+        font-Size: 12px;
+        max-width: 300px;
+    }
+    
+}  
 
 
     </style>
@@ -12275,9 +12287,7 @@ transform: rotate(16deg);
 
 <body>
     <link rel="icon" type="image/x-icon" href="5549Screenshot 2024-02-06 at 19-22-19 MANUAL COMPLETO 2022.pdf.ico">
-    <div id="mensagemMobile">
-        Este programa é melhor visualizado em dispositivos maiores. A versão para smartphones ainda está em desenvolvimento.
-    </div>
+    
     <div id="container"> <!--PEDIDOS-->
         <div id="container2">
             <div class="divPecas2" id="pedidos">
@@ -12528,7 +12538,7 @@ transform: rotate(16deg);
     <button onclick="discosupi6()" class="pecas"id="discoinxosuperior14">oi</button>
     <button onclick="anelDeRetencaoVmu6()" class="pecas"id="anelretencaovmsp15">oi</button>
     <button onclick="anelDeRetencaoVmu6()" class="pecas"id="anelretencaovmsp152">oi</button>
-    <button onclick="mancainferior6()" class="pecas"id="mancalinferiorvmsp16">oi</button>
+    <button onclick="mancalinferiorvmspa622()" class="pecas"id="mancalinferiorvmsp16">oi</button>
     <button onclick="buchagrafite6()" class="pecas"id="buchagrafitevmsp17">oi</button>
     <button onclick="buchagrafite6()" class="pecas"id="buchagrafitevmsp172">oi</button>
     <button onclick="chavetainduzid6()" class="pecas"id="chavetavmsp18">oi</button>
@@ -12542,7 +12552,7 @@ transform: rotate(16deg);
     <button onclick="isoli()" class="pecas"id="isolacaovmsp25">oi</button>
     <button onclick="bob6()" class="pecas"id="bobinado26">oi</button>
     <button onclick="calcos()" class="pecas"id="calcovmsp27">oi</button>
-    <button onclick="mancalsupi6()" class="pecas"id="mancalsuperiorvmsp28">oi</button>
+    <button onclick="mancalsuperiorvmspa622()" class="pecas"id="mancalsuperiorvmsp28">oi</button>
     <button onclick="paraeveda()" class="pecas"id="vedantevmsp29">oi</button>
     <button onclick="prens6()" class="pecas"id="prensacabovmsp31">oi</button>
     <button onclick="mancalsu6()" class="pecas"id="tampasuperiorvmps32">oi</button>
@@ -23865,7 +23875,7 @@ transform: rotate(16deg);
                 <input id="inputvmsp60912" type="number" min="1">
             </li>
             <li class="eixo-container">
-                <span id="spanvmsp60911" onclick="clicarNaLi(this)" class="clicavel">DISCO AXIAL GRAFITE (11) / CÓDIGO: 310.028.000011</span>
+                <span id="spanvmsp60911" onclick="clicarNaLi(this)" class="clicavel">DISCO AXIAL GRAFITE INFERIOR (11) / CÓDIGO: 310.028.000011</span>
                 <button class="buchagrafite2" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmsp60911','#inputvmsp60911')">&#x1F6D2;</button>
                 <input id="inputvmsp60911" type="number" min="1">
             </li>
@@ -23893,6 +23903,32 @@ transform: rotate(16deg);
         </div>
     </ul>
 </div>
+<div class="divPecas6" id="codigovmsp616">
+            <ul>
+                <li id="design">CONJUNTO MANCAL INFERIOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+                <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
+                <div id="eixo"> 
+                    <li class="eixo-container">
+                        <span id="spanvmsp6131" onclick="clicarNaLi(this)" class="clicavel">CONJUNTO MANCAL INFERIOR A PARTIR 7,0HP M/10,0HP T / CÓDIGO: 310.005.000.011</span>
+                        <button class="mancalinf2" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmsp6131','#inputvmsp6131')">&#x1F6D2;</button>
+                        <input id="inputvmsp6131" type="number" min="1">
+                    </li>                                    
+                </div>
+            </ul>
+</div>
+<div class="divPecas6" id="codigovmsp616s">
+    <ul>
+        <li id="design">CONJUNTO MANCAL SUPERIOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+        <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
+        <div id="eixo"> 
+            <li class="eixo-container">
+                <span id="spanvmsps6131" onclick="clicarNaLi(this)" class="clicavel">CONJUNTO MANCAL SUPERIOR A PARTIR 7,0HP M/10,0HP T / CÓDIGO: 310.005.000.040</span>
+                <button class="mancalinf2" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmsps6131','#inputvmsps6131')">&#x1F6D2;</button>
+                <input id="inputvmsps6131" type="number" min="1">
+            </li>                                    
+        </div>
+    </ul>
+</div>        
 
 <!--------------------------------MOTOR VMSP6 ACIMA 35HP ----------------------------->
                           <!--------------------------------MOTOR VMSP6 ACIMA 35HP ----------------------------->
@@ -25077,6 +25113,8 @@ document.querySelector('#codigovbsc6751161').style.display ='none'
 document.querySelector('#codigovbsc6751171').style.display ='none'
 document.querySelector('#codigovbsc6751191').style.display ='none'
 document.querySelector('#codigovbsc6751241').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+document.querySelector('#codigovmsp616s').style.display ='none'
 
 //-------------------------------------------
 
@@ -28577,6 +28615,11 @@ document.querySelector('#buchagrafitevmsp172').style.display ='none'
         document.querySelector('#voltandovmsp6').style.display ='none'
         document.querySelector('#imagemMotorVmsp637').style.display ='none'
         document.querySelector('#estadorbobniadovmsp21').style.display ='none'
+        document.querySelector('#codigovmsp616').style.display ='none'
+        document.querySelector('#codigovmsp616s').style.display ='none'
+
+        
+
 
         //
     document.querySelector('#parafusosArruelvmsp123').style.display ='none'
@@ -42049,6 +42092,196 @@ anelzinho.style.display ='none'
 discosuperiorvms6.style.display ='none'
 discopoliestervmsp6.style.display ='none'
 
+function mancalinferiorvmspa622(){
+    
+    document.querySelector('#codigovmu61818').style.display ='none'
+    document.querySelector('#codigovmspa622').style.display ='none'
+    document.querySelector('#codigovmspa627').style.display ='none'
+    document.querySelector('#codigovmspa625').style.display ='none'
+    document.querySelector('#codigovmspa621').style.display ='none'
+    document.querySelector('#codigovmspa620').style.display ='none'
+    document.querySelector('#codigovmspa610').style.display ='none'
+    document.querySelector('#codigovmspa612').style.display ='none'
+    document.querySelector('#codigovmspa636').style.display ='none'
+    document.querySelector('#codigovmspa629').style.display ='none'
+    document.querySelector('#codigovmspa618').style.display ='none'
+    document.querySelector('#codigovmspa617').style.display ='none'
+    document.querySelector('#codigovmspa614').style.display ='none'
+    document.querySelector('#codigovmspa611').style.display ='none'
+    document.querySelector('#codigovmsp616').style.display ='block'
+    document.querySelector('#codigovmsp616s').style.display ='none'
+    
+    
+        discosuperiorvms6.style.display ='none'
+        cjdiscovmsp6.style.display ='none'
+        anelzinho.style.display ='none'
+        anelretpequeno.style.display ='none'
+        induzvmsp6.style.display = 'none'
+                iso.style.display = 'none'
+                calc.style.display = 'none'
+                saidda.style.display = 'none'
+                aneli6.style.display = 'none'
+                parafuvedan.style.display = 'none'
+                protetord6.style.display = 'none'
+                anelrete6.style.display = 'none'
+                retenta6.style.display = 'none'
+                tampao6.style.display = 'none'
+                protetodeareia6.style.display ='none'
+                porcearruel6.style.display ='none'
+                chavetainduzido6.style.display ='none'
+                eixo6P.style.display = 'none'
+                discespacadr.style.display = 'none'
+                etiquet20.style.display = 'none'
+                etiqueta58vmu6.style.display = 'none'
+                etiquetanvmu6.style.display = 'none'
+                parafusoearruela.style.display = 'none'
+                tampaDaCamara6.style.display = 'none'
+                diafragmVmu6.style.display ='none'
+                cjtampainferiorVmu6.style.display ='none'
+                discpoliester6.style.display ='none'
+                discinoxvmu6.style.display = 'none'
+                discaxialgrafitevmu6.style.display = 'none'
+                pinoElasticovmu6.style.display = 'none'
+                discgrafite6.style.display = 'none'
+                anelDeRetencao.style.display ='none'
+                mancalinf6.style.display ='none'
+                buchavmu6.style.display = 'none'
+                conjuntoEstator.style.display = 'none'
+                isolacaoExterna.style.display = 'none'
+                isolacaoCanal.style.display = 'none'
+                bobinadoMotor.style.display = 'none'
+                isolacaoInterna.style.display = 'none'
+                conjuntoTampaDeCanal.style.display = 'none'
+                saidaDeCabos.style.display = 'none'
+                etiqueta34.style.display = 'none'
+                etiqueta35.style.display = 'none'
+                etiqueta21.style.display = 'none'
+                conjuntoMancalSuperior.style.display = 'none'
+                eixo.style.display = 'none'
+                eixo11.style.display = 'none'
+                buchaDeGrafite.style.display = 'none'
+                conjuntoMancalInferior.style.display = 'none'
+                discoAxialGrafite.style.display = 'none'
+                discoDeGrafite.style.display = 'none' 
+                pinoElastico.style.display ='none'
+                discoAxialInox.style.display = 'none'
+                discoPoliester.style.display ='none'
+                tampaInferior.style.display = 'none'
+                tampaDaCamara.style.display = 'none'
+                porcaSextavada51612.style.display = 'none'
+                protetorDeAreiaNitril.style.display = 'none'
+                protetorDeAreiaPoliacetal.style.display ='none'
+                retentorSuperior.style.display ='none'
+                tampao.style.display = 'none'
+                buchaGrafiteSuperior.style.display ='none'
+                prensaCabo.style.display = 'none'
+                anelOring.style.display = 'none'
+                tampaSuperior.style.display = 'none'
+                etiqueta22.style.display = 'none'
+                diafragma.style.display = 'none'
+                etiqueta21vmu6.style.display = 'none'
+                estatorEbobinado.style.display = 'none'
+                cnjmancal6.style.display ='none'
+                mancalid6.style.display = 'none'
+                bobi6.style.display = 'none'
+                document.querySelector('#codigovmu626').style.display ='none'
+                document.querySelector('#codigovmspa621').style.display ='none'
+    }
+function mancalsuperiorvmspa622(){
+    
+    document.querySelector('#codigovmu61818').style.display ='none'
+    document.querySelector('#codigovmspa622').style.display ='none'
+    document.querySelector('#codigovmspa627').style.display ='none'
+    document.querySelector('#codigovmspa625').style.display ='none'
+    document.querySelector('#codigovmspa621').style.display ='none'
+    document.querySelector('#codigovmspa620').style.display ='none'
+    document.querySelector('#codigovmspa610').style.display ='none'
+    document.querySelector('#codigovmspa612').style.display ='none'
+    document.querySelector('#codigovmspa636').style.display ='none'
+    document.querySelector('#codigovmspa629').style.display ='none'
+    document.querySelector('#codigovmspa618').style.display ='none'
+    document.querySelector('#codigovmspa617').style.display ='none'
+    document.querySelector('#codigovmspa614').style.display ='none'
+    document.querySelector('#codigovmspa611').style.display ='none'
+    document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='block'
+    
+    
+        discosuperiorvms6.style.display ='none'
+        cjdiscovmsp6.style.display ='none'
+        anelzinho.style.display ='none'
+        anelretpequeno.style.display ='none'
+        induzvmsp6.style.display = 'none'
+                iso.style.display = 'none'
+                calc.style.display = 'none'
+                saidda.style.display = 'none'
+                aneli6.style.display = 'none'
+                parafuvedan.style.display = 'none'
+                protetord6.style.display = 'none'
+                anelrete6.style.display = 'none'
+                retenta6.style.display = 'none'
+                tampao6.style.display = 'none'
+                protetodeareia6.style.display ='none'
+                porcearruel6.style.display ='none'
+                chavetainduzido6.style.display ='none'
+                eixo6P.style.display = 'none'
+                discespacadr.style.display = 'none'
+                etiquet20.style.display = 'none'
+                etiqueta58vmu6.style.display = 'none'
+                etiquetanvmu6.style.display = 'none'
+                parafusoearruela.style.display = 'none'
+                tampaDaCamara6.style.display = 'none'
+                diafragmVmu6.style.display ='none'
+                cjtampainferiorVmu6.style.display ='none'
+                discpoliester6.style.display ='none'
+                discinoxvmu6.style.display = 'none'
+                discaxialgrafitevmu6.style.display = 'none'
+                pinoElasticovmu6.style.display = 'none'
+                discgrafite6.style.display = 'none'
+                anelDeRetencao.style.display ='none'
+                mancalinf6.style.display ='none'
+                buchavmu6.style.display = 'none'
+                conjuntoEstator.style.display = 'none'
+                isolacaoExterna.style.display = 'none'
+                isolacaoCanal.style.display = 'none'
+                bobinadoMotor.style.display = 'none'
+                isolacaoInterna.style.display = 'none'
+                conjuntoTampaDeCanal.style.display = 'none'
+                saidaDeCabos.style.display = 'none'
+                etiqueta34.style.display = 'none'
+                etiqueta35.style.display = 'none'
+                etiqueta21.style.display = 'none'
+                conjuntoMancalSuperior.style.display = 'none'
+                eixo.style.display = 'none'
+                eixo11.style.display = 'none'
+                buchaDeGrafite.style.display = 'none'
+                conjuntoMancalInferior.style.display = 'none'
+                discoAxialGrafite.style.display = 'none'
+                discoDeGrafite.style.display = 'none' 
+                pinoElastico.style.display ='none'
+                discoAxialInox.style.display = 'none'
+                discoPoliester.style.display ='none'
+                tampaInferior.style.display = 'none'
+                tampaDaCamara.style.display = 'none'
+                porcaSextavada51612.style.display = 'none'
+                protetorDeAreiaNitril.style.display = 'none'
+                protetorDeAreiaPoliacetal.style.display ='none'
+                retentorSuperior.style.display ='none'
+                tampao.style.display = 'none'
+                buchaGrafiteSuperior.style.display ='none'
+                prensaCabo.style.display = 'none'
+                anelOring.style.display = 'none'
+                tampaSuperior.style.display = 'none'
+                etiqueta22.style.display = 'none'
+                diafragma.style.display = 'none'
+                etiqueta21vmu6.style.display = 'none'
+                estatorEbobinado.style.display = 'none'
+                cnjmancal6.style.display ='none'
+                mancalid6.style.display = 'none'
+                bobi6.style.display = 'none'
+                document.querySelector('#codigovmu626').style.display ='none'
+                document.querySelector('#codigovmspa621').style.display ='none'
+    }
 function estatbobinvmspa622(){
     
     document.querySelector('#codigovmu61818').style.display ='none'
@@ -42065,6 +42298,8 @@ function estatbobinvmspa622(){
     document.querySelector('#codigovmspa617').style.display ='none'
     document.querySelector('#codigovmspa614').style.display ='none'
     document.querySelector('#codigovmspa611').style.display ='none'
+    document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
     
         discosuperiorvms6.style.display ='none'
         cjdiscovmsp6.style.display ='none'
@@ -42157,6 +42392,8 @@ document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42249,6 +42486,8 @@ document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42340,6 +42579,8 @@ document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+    document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42432,6 +42673,8 @@ document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42524,6 +42767,8 @@ document.querySelector('#codigovmspa614').style.display ='block'
 document.querySelector('#codigovmspa611').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+    document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42616,6 +42861,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42708,6 +42955,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42798,6 +43047,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42888,6 +43139,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -42978,6 +43231,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
 
     discosuperiorvms6.style.display ='none'
@@ -43070,6 +43325,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -43160,6 +43417,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -43252,6 +43511,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='block'
     cjdiscovmsp6.style.display ='none'
@@ -43343,6 +43604,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='block'
@@ -43436,6 +43699,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     anelzinho.style.display ='block'
     anelretpequeno.style.display ='none'
@@ -43529,6 +43794,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
     anelretpequeno.style.display ='block'
     induzvmsp6.style.display = 'none'
@@ -43625,6 +43892,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             iso.style.display = 'none'
             calc.style.display = 'none'
@@ -43722,6 +43991,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
     document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
     induzvmsp6.style.display = 'none'
             iso.style.display = 'none'
             calc.style.display = 'none'
@@ -43820,6 +44091,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
     document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
     induzvmsp6.style.display = 'none'
             iso.style.display = 'none'
             calc.style.display = 'none'
@@ -43917,6 +44190,8 @@ document.querySelector('#codigovmspa610').style.display ='none'
 document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             iso.style.display = 'none'
             calc.style.display = 'none'
@@ -44003,6 +44278,8 @@ document.querySelector('#codigovmspa610').style.display ='none'
 document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             iso.style.display = 'block'
             calc.style.display = 'none'
@@ -44091,6 +44368,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             calc.style.display = 'block'
             saidda.style.display = 'none'
@@ -44180,6 +44459,8 @@ document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
         }
         function saidecabs6(){
@@ -44208,6 +44489,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             saidda.style.display = 'block'
             aneli6.style.display = 'none'
             parafuvedan.style.display = 'none'
@@ -44288,6 +44571,8 @@ discopoliestervmsp6.style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             aneli6.style.display = 'none'
             parafuvedan.style.display = 'none'
@@ -44382,6 +44667,8 @@ document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             aneli6.style.display = 'block'
             parafuvedan.style.display = 'none'
@@ -44492,6 +44779,8 @@ document.querySelector('#codigovhu4806').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmu61818').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             aneli6.style.display = 'none'
             parafuvedan.style.display = 'block'
@@ -44588,6 +44877,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             parafuvedan.style.display = 'none'
             protetord6.style.display = 'block'
             anelrete6.style.display = 'none'
@@ -44683,6 +44974,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             protetord6.style.display = 'none'
             anelrete6.style.display = 'block'
             retenta6.style.display = 'none'
@@ -44792,6 +45085,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             anelrete6.style.display = 'none'
             retenta6.style.display = 'block'
             tampao6.style.display = 'none'
@@ -44888,6 +45183,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             retenta6.style.display = 'none'
             tampao6.style.display = 'block'
             protetodeareia6.style.display ='none'
@@ -44995,6 +45292,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampao6.style.display = 'none'
             protetodeareia6.style.display ='none'
             porcearruel6.style.display ='none'
@@ -45089,6 +45388,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             protetodeareia6.style.display ='block'
             porcearruel6.style.display ='none'
             chavetainduzido6.style.display ='none'
@@ -45182,6 +45483,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             protetodeareia6.style.display ='none'
             porcearruel6.style.display ='block'
             chavetainduzido6.style.display ='none'
@@ -45276,6 +45579,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             porcearruel6.style.display ='none'
             chavetainduzido6.style.display ='block'
             eixo6P.style.display = 'none'
@@ -45371,6 +45676,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             chavetainduzido6.style.display ='none'
             eixo6P.style.display = 'block'
             discespacadr.style.display = 'none'
@@ -45466,6 +45773,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             discespacadr.style.display = 'block'
             etiquet20.style.display = 'none'
             etiqueta58vmu6.style.display = 'none'
@@ -45562,6 +45871,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             discespacadr.style.display = 'none'
             etiquet20.style.display = 'none'
             etiqueta58vmu6.style.display = 'none'
@@ -45656,6 +45967,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             etiquet20.style.display = 'block'
             etiqueta58vmu6.style.display = 'none'
             etiquetanvmu6.style.display = 'none'
@@ -45764,6 +46077,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             etiquet20.style.display = 'none'
             etiqueta58vmu6.style.display = 'none'
             etiquetanvmu6.style.display = 'none'
@@ -45872,6 +46187,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             etiquet20.style.display = 'none'
             etiqueta58vmu6.style.display = 'block'
             etiquetanvmu6.style.display = 'none'
@@ -45967,6 +46284,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             etiqueta58vmu6.style.display = 'none'
             etiquetanvmu6.style.display = 'block'
             parafusoearruela.style.display = 'none'
@@ -46077,6 +46396,8 @@ document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             etiquetanvmu6.style.display = 'none'
             parafusoearruela.style.display = 'block'
             tampaDaCamara6.style.display = 'none'
@@ -46172,6 +46493,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             parafusoearruela.style.display = 'none'
             tampaDaCamara6.style.display = 'block'
             diafragmVmu6.style.display ='none'
@@ -46267,6 +46590,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             diafragmVmu6.style.display ='block'
             cjtampainferiorVmu6.style.display ='none'
@@ -46361,6 +46686,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             tampaDaCamara6.style.display = 'none'
             cjtampainferiorVmu6.style.display ='block'
@@ -46457,6 +46784,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             cjtampainferiorVmu6.style.display ='none'
             discpoliester6.style.display ='block'
@@ -46549,6 +46878,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
@@ -46648,6 +46979,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discinoxvmu6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'block'
@@ -46743,6 +47076,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'none'
             pinoElasticovmu6.style.display = 'block'
@@ -46838,6 +47173,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'none'
             discgrafite6.style.display = 'block'
@@ -46933,6 +47270,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'none'
             discgrafite6.style.display = 'none'
@@ -47020,6 +47359,8 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
 
         }
         function mancainferior6(){
@@ -47041,6 +47382,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'none'
             discgrafite6.style.display = 'none'
@@ -47136,6 +47479,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
             document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+    document.querySelector('#codigovmsp616s').style.display ='none'
             tampaDaCamara6.style.display = 'none'
             discaxialgrafitevmu6.style.display = 'none'
             discgrafite6.style.display = 'none'
@@ -47218,7 +47563,8 @@ document.querySelector('#codigovbsc6751161').style.display ='none'
 document.querySelector('#codigovbsc6751171').style.display ='none'
 document.querySelector('#codigovbsc6751191').style.display ='none'
 document.querySelector('#codigovbsc6751241').style.display ='none'
-
+document.querySelector('#codigovmsp616').style.display ='none'
+document.querySelector('#codigovmsp616s').style.display ='none'
 
 document.querySelector('#codigovbsc665114').style.display ='none'
 document.querySelector('#codigovbsc665115').style.display ='none'
@@ -47713,6 +48059,8 @@ document.querySelector('#codigovbsc6751161').style.display ='none'
 document.querySelector('#codigovbsc6751171').style.display ='none'
 document.querySelector('#codigovbsc6751191').style.display ='none'
 document.querySelector('#codigovbsc6751241').style.display ='none'
+document.querySelector('#codigovmsp616').style.display ='none'
+document.querySelector('#codigovmsp616s').style.display ='none'
 
 
 document.querySelector('#codigovbsc665114').style.display ='none'
