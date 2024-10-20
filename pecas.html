@@ -14078,6 +14078,22 @@ transform: rotate(16deg);
         transition: width 1s linear; /* Animação da largura da barra de progresso */
         }
 
+        #textarea{
+            position: absolute;
+            top:20px
+        }
+
+        #registro textarea {
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+            margin-top:10px;
+            border:none;
+            background-color: rgb(65, 66, 68);
+            color:rgb(255, 255, 255)
+            
+        }
+
     </style>
 </head>
 
@@ -14097,10 +14113,11 @@ transform: rotate(16deg);
                     <input id="inputemail" placeholder="exemple@exemple.com" type="text"><br>
                     <label id="labeltelefone" for="">Telefone: </label>
                     <input id="inputtelefone" placeholder="051999999999" type="number"><br>
+                    <textarea id="textoarea" placeholder="Observações:" oninput="adjustTextareaHeight(this)"></textarea>                </div>
+
                     <button class="capturarTela" id="capturarTela" onclick="salvarItens()">Salvar itens</button>
                     <button class="removerTodos" id="removerTodos" onclick="removerItens()">Remover todos</button>
                     <button class="enviarpedido" id="enviarpedido" onclick="botaoConfirmacao()">Enviar pedido</button>
-                </div>
                 <p><br></p>
                 <p><b></b><br></p>
                 <ul class="pedidoclassul" id="pedidosUl">
@@ -28200,6 +28217,8 @@ transform: rotate(16deg);
     const inputpedido2 = document.querySelector('#inputempresa');
     const inputpedido3 = document.querySelector('#inputemail');
     const inputpedido4 = document.querySelector('#inputtelefone');
+    const inputpedido5 = document.querySelector('#textoarea');
+
 
     if (inputpedido1.value == '' || inputpedido2.value == '' || inputpedido3.value == '' || inputpedido4.value == '') {
         alert('Para salvar o pedido, preencha o formulário');
@@ -28240,7 +28259,7 @@ transform: rotate(16deg);
         }
 
         // Adiciona os dados dos inputs ao array de itensVisiveis
-        itensVisiveis.unshift(`Nome: ${inputpedido1.value}\nEmpresa: ${inputpedido2.value}\nEmail: ${inputpedido3.value}\nTelefone: ${inputpedido4.value}\n\n`);
+        itensVisiveis.unshift(`Nome: ${inputpedido1.value}\nEmpresa: ${inputpedido2.value}\nEmail: ${inputpedido3.value}\nTelefone: ${inputpedido4.value}\n\nObservações: ${inputpedido5.value}\n\n\nPEDIDO:`);
         
 
 
@@ -58731,6 +58750,7 @@ function salvarItens() {
     const inputpedido2 = document.querySelector('#inputempresa');
     const inputpedido3 = document.querySelector('#inputemail');
     const inputpedido4 = document.querySelector('#inputtelefone');
+    const inputpedido5 = document.querySelector('#textoarea');
 
     if (inputpedido1.value == '' || inputpedido2.value == '' || inputpedido3.value == '' || inputpedido4.value == '') {
         alert('Para salvar o pedido, preencha o formulário');
@@ -58754,11 +58774,11 @@ function salvarItens() {
         }
 
         // Adiciona os dados dos inputs ao array de itensVisiveis
-        itensVisiveis.unshift(`Nome: ${inputpedido1.value}\nEmpresa: ${inputpedido2.value}\nEmail: ${inputpedido3.value}\nTelefone: ${inputpedido4.value}\n\n`);
+        itensVisiveis.unshift(`Nome: ${inputpedido1.value}\nEmpresa: ${inputpedido2.value}\nEmail: ${inputpedido3.value}\nTelefone: ${inputpedido4.value}\n\nObservações: ${inputpedido5.value}\n\n\nPEDIDO:`);
         
 
         // Cria um blob de texto com os itens visíveis
-        const itensBlob = new Blob([itensVisiveis.join('\n\n\n\n')], { type: 'text/plain' });
+        const itensBlob = new Blob([itensVisiveis.join('\n\n\n')], { type: 'text/plain' });
 
         // Cria um link para fazer o download do arquivo de texto
         const link = document.createElement('a');
@@ -58771,20 +58791,10 @@ function salvarItens() {
         document.body.removeChild(link);
 
 
-    const templateParams={
-    from_name: `${inputpedido1.value}`,
-    message: `${itensVisiveis.join('\n\n')}`,
-    email: `${inputpedido3.value}`
+    
 }
 
-    emailjs.send("service_4altwmi", "template_t95vjf2", templateParams, "nxBqRVgZ00BUnxJKv")
-    .then((response)=>{
-        console.log("Enviado")
-    },(err)=>{
-        concole.log(err)
-    })
-    }
-
+    
     
 }
 
